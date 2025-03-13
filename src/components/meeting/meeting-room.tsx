@@ -87,13 +87,10 @@ export function MeetingRoom({ roomId }: { roomId: string }) {
       connect={true}
       serverUrl={LIVEKIT_URL}
       data-lk-theme="default"
-      // style={{ height: "100dvh" }}
       onDisconnected={handleDisconnect}
     >
       <VideoConference />
       <RoomAudioRenderer />
-      {/* <ControlBar /> */}
-      {/* <MediaDeviceMenu /> */}
     </LiveKitRoom>
   );
 }
